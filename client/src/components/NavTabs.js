@@ -1,18 +1,9 @@
 import React from 'react';
-//import '../App.css';
 
 function NavTabs({ currentPage, handlePageChange }) {
   return (
     <ul className="nav">
-      <li className="navItem">
-        <a
-          href="#home"
-          onClick={() => handlePageChange('Home')}
-          className={currentPage === 'Home' ? 'nav-link active' : 'nav-link'}
-        >
-          Home
-        </a>
-      </li>
+      
       <li className="navItem">
         <a
           href="#about"
@@ -22,6 +13,7 @@ function NavTabs({ currentPage, handlePageChange }) {
           About
         </a>
       </li>
+
       <li className="navItem">
         <a
           href="#projects"
@@ -31,6 +23,7 @@ function NavTabs({ currentPage, handlePageChange }) {
           Projects
         </a>
       </li>
+
       <li className="navItem">
         <a
           href="#contact"
@@ -40,6 +33,7 @@ function NavTabs({ currentPage, handlePageChange }) {
           Contact
         </a>
       </li>
+
       <li className="navItem">
         {/*When clicked will download resume*/}
         <a

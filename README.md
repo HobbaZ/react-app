@@ -52,6 +52,7 @@ You can view the [website link](https://github.com/HobbaZ/react-portfolio) here.
 You can also contribute by opening a pull request or submitting an issue
 
 ## Acknowledgements
+[https://create-react-app.dev/docs/adding-images-fonts-and-files/](https://create-react-app.dev/docs/adding-images-fonts-and-files/)
 
 ## Testing
 No unit tests
