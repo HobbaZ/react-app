@@ -4,7 +4,7 @@ function NavTabs({ currentPage, handlePageChange }) {
   return (
     <ul className="nav">
       
-      <li className="navItem">
+      <li className="navItem title">
         <a
           href="#about"
           onClick={() => handlePageChange('About')}

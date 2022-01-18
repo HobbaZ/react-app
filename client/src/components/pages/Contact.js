@@ -51,7 +51,7 @@ function Contact() {
     <div>
       <section>
       <h1>Contact Me</h1>
-      <p>Drop me a line at <a href="mailto:zachobba@gmail.com">zachobba@gmail.com</a> or find me on <a href='https://www.linkedin.com/in/zachary-hobba-52aaa182/'>LinkedIn</a></p>
+      <p>Shoot me an email at <a href="mailto:zachobbawebdev@gmail.com">zachobbawebdev@gmail.com</a> or find me on <a href='https://www.linkedin.com/in/zachary-hobba-52aaa182/'>LinkedIn</a></p>
       </section>
       <form className="form">
         

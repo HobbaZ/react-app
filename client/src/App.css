@@ -1,164 +1,158 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-      'Lucida Sans', Arial, sans-serif;
-  }
-  
-  body {
-    background-color: whitesmoke;
-  }
-
-  h1,h2,h3,h4,h5,h6 {
-    font-family: "Nova Square", serif;
-  }
-
-  h1 {
-    font-size: 30px;
-    text-align: center;
-  }
-
-  p {
-    font-size: 20px;
-  }
-
-  .nav {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    height: auto;
-    text-decoration: none;
-    font-size: 30px;
-    /*border-bottom: 5px solid black;*/
-  }
-
-  ul {
-      list-style-type: none;
-  }
-
-  .navLink {
-      color: black;
-      text-decoration: none;
-      padding: 0px 20px 0px 20px;
-      transition: all 0.5s;
-  }
-
-  .navLink:hover, footer a:hover {
-      color: white;
-      background-color: black;
-  }
-
-  .active {
-    background-color: rgba(128, 128, 128, 0.432);
-  }
-
-  .noEffect {
-    color: black;
-    font-weight: 900;
-    text-decoration: none;
-    padding: 0px 200px 0px 0px;
-  }
-
-  .container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 15px;
-  }
-
-  .grid-item-2 {
-    margin: auto;
-    width: fit-content;
-  }
-
-  .grid-item-1 {
-    width: fit-content;
-  }
-
-  .aboutTitle {
-      text-align: center;
-  }
-
-  .aboutMeDesc {
-    margin: auto;
-    font-size: 30px;
-    width: 50%;
-  }
-
-  .profileImage {
-    max-width:120%;
-    max-height:120%;
-    flex: none;
-    background-position: center;
-    object-fit:contain;
-    clip-path: polygon(0% 0%, 100% 0%, 75% 100%, 0% 100%);
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
 }
 
-  .projectContainer {
-    display: flex;
-    max-height: 100vh;
-    width:90%;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    padding: 10px
-  }
+body {
+  background-color: whitesmoke;
+}
 
-  .projectContainer a:visited {
+h1,h2,h3,h4,h5,h6 {
+  font-family: "Nova Square", serif;
+}
+
+h1 {
+  font-size: 30px;
+  text-align: center;
+}
+
+p {
+  font-size: 20px;
+}
+
+.nav {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: auto;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.navLink {
+    color: black;
+    text-decoration: none;
+    padding: 0px 20px 0px 20px;
+    transition: all 0.5s;
+}
+
+.navLink:hover, footer a:hover {
     color: white;
-  }
-
-  .projectBox {
-    text-align: center;
-    height: 400px;
-    padding: 5px;
-    width: 30%;
-  }
-
-  button {
     background-color: black;
-    color: white;
-    font-size: 15px;
-    padding: 5px;
-    margin: 5px;
-    width: 150px;
-  }
+}
 
-  .projectImage {
-    width:50%;
-    height: 50%;
-    background-position:top;
-    object-fit:contain;
-  }
+.active {
+  background-color: rgba(128, 128, 128, 0.432);
+}
 
-  section {
-    padding-bottom: 10px;
-    padding-top: 20px;
-    text-align: center;
-  }
+.noEffect {
+  color: black;
+  font-weight:900;
+  font-size: 35px;
+  text-decoration: none;
+}
 
-  .form {
-    width: 50%;
-    margin: auto;
-    height: 100%;
-    padding: 20px;
-  }
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 15px;
+}
 
-  label {
-    font-size: 20px;
-  }
+.aboutImageBox {
+  margin: auto;
+  width: fit-content;
+}
 
-  .formField {
-    width: 100%;
-    border: 1px grey solid;
-    height: 30px;
-    margin-bottom: 20px;
-  }
+.aboutTextBox {
+  width: fit-content;
+}
 
-  .textArea {
-    height: 200px;
-  }
+.aboutMeDesc {
+  margin: auto;
+  font-size: 30px;
+  width: 50%;
+}
+
+.profileImage {
+  max-width:120%;
+  max-height:120%;
+  flex: none;
+  background-position: center;
+  object-fit:contain;
+}
+
+.projectContainer {
+  display: flex;
+  min-height: 100vh;
+  width:90%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 10px
+}
+
+.projectContainer a:visited {
+  color: white;
+}
+
+.projectBox {
+  text-align: center;
+  height: max-content;
+  padding: 5px;
+  width: 30%;
+}
+
+button {
+  background-color: black;
+  color: white;
+  font-size: 15px;
+  padding: 5px;
+  margin: 5px;
+  width: 150px;
+}
+
+.projectImage {
+  width:80%;
+  height: 80%;
+  background-position:top;
+  object-fit:contain;
+}
+
+section {
+  padding-bottom: 10px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+form {
+  width: 60%;
+  margin: auto;
+  height: 100%;
+  padding: 20px;
+}
+
+label {
+  font-size: 20px;
+}
+
+.formField {
+  width: 100%;
+  border: 1px grey solid;
+  height: 30px;
+  margin-bottom: 20px;
+}
+
+.textArea {
+  height: 200px;
+}
 
 .fab:hover, .fas:hover {
   color: white;
@@ -169,21 +163,18 @@
   height: 100%;
 }
 
-embed {
-  height: "100%";
-  width: "100%";
-}
-
 footer {
-    position: fixed;
-    bottom: 0;
-    height: 40px;
-    width: 100%;
-    justify-content: center;
-    display: flex;
+  position: fixed;
+  background-color: whitesmoke;
+  bottom: 0px;
+  padding-bottom: 5px;
+  height: fit-content;
+  width: 100%;
+  justify-content: center;
+  display: flex;
 }
 
-footer a {
+footer div a {
   color: black;
   transition: all 0.5s;
   margin: auto 10px;
@@ -196,8 +187,9 @@ footer a:hover {
 }
 
 footer h4 {
-  font-size: 30px;
-  margin: auto 30px auto 0px; /* Center it in middle of footer*/
+  font-size: 35px;
+  padding-bottom: 10px;
+  margin: auto 30px; /* Center it in middle of footer*/
 }
 
  /*Layout for different screens*/
@@ -206,39 +198,156 @@ footer h4 {
   .nav {
       flex-direction: column;
       text-align: center;
-      justify-content: center;
+  }
+
+  .navLink:hover {
+    clip-path: none;
+  }
+
+  section {
+    padding-bottom: 10px;
+    padding-top: 20px;
+    text-align:center;
+  }
+
+  .profileImage {
+    clip-path: none;
+    max-height: 100%;
+    max-width: 100%;
+  }
+
+  .title {
+    padding-right: 30px;
+  }
+
+  .aboutMeDesc {
+    font-size: 20px;
+    width: 90%;
+    margin-bottom: 50px;
+  }
+
+  .projectBox {
+    padding: 5px;
+    margin: 10px 0px;
+    width: 100%;
+  }
+
+  .projectContainer {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  .form {
+    width: 100%;
   }
 
   .container {
     flex-direction: column;
+    align-items: center;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  footer a {
+    margin: 0;
+  }
+
+  footer h4 {
+    font-size: 20px;
   }
 
   .fab, .fas {
-      font-size: 60px;
+      font-size: 35px;
   }
 }
 
 @media only screen and (min-width: 600px) { /*medium  tablet screens*/
-  .nav {
-      flex-direction: row;
-      text-align: center;
-      justify-content: center;
-      margin: auto;
-      width: 100%;
+  
+  .profileImage {
+    min-width:80%;
+    min-height:80%;
+    margin-left: -20px;
+    left:0;
   }
 
-  .container {
+  .aboutTextBox {
+    width: 60%;
+    margin-left: 50px;
+  }
+
+  .navLink:hover {
+    clip-path: polygon(0% 0%, 100% 0%, 75% 100%, 0% 100%);
+  }
+
+  .projectContainer {
+    flex-direction: row;
+    margin-bottom: 20px;
+  }
+
+  .projectBox {
+    padding: 5px;
+    margin: 10px 0px;
+    width: 50%;
+  }
+
+  .form {
+    width: 75%;
+  }
+
+  footer {
     flex-direction: row;
   }
 
 }
 
-@media only screen and (min-width: 771px) { /*larger screens*/
-  .nav {
-      flex-direction: row;
+@media only screen and (min-width: 760px) { /*larger screens*/
+
+  .profileImage {
+    min-width:120%;
+    min-height:120%;
+    margin-left: -20px;
+    left:0;
   }
+
+  .aboutTextBox {
+    width: 80%;
+    margin-left: 30px;
+  }
+
+  .aboutMeDesc {
+    width: 90%;
+  }
+
+  .nav {
+    flex-direction: row;
+    justify-items: center;
+}
 
   .fab, .fas {
     font-size: 30px;
+}
+
+.profileImage {
+  clip-path: none;
+  max-height: 200%;
+  max-width: 200%;
+  clip-path: polygon(0% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+
+.container {
+  flex-direction: row;
+}
+
+.form {
+  width: 50%;
+}
+
+.projectBox {
+  padding: 10px;
+  margin: 10px 0px;
+  width: 33%;
 }
 } 
