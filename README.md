@@ -12,10 +12,10 @@
 
 ## Description
 ### Project Aim ###
-Make web dev portfolio with React
+Make my web development portfolio with React
 
 ### What I Learnt ###
-How to use React
+Beginning to learn how to use React, I also learnt a little about iframe (mainly for displaying PDFs)
 
 ## Deployment
 You can view the [website link](https://hobbaz.github.io/react-portfolio/) here. 
@@ -35,16 +35,33 @@ You can view the [website link](https://hobbaz.github.io/react-portfolio/) here.
 - [Questions](#questions)
 
 ## User Story
-
+Create your web developer portfolio using React
 
 ## Screenshots
+![Landing page of React portfolio](./images/screencap1.PNG)
+
+![Projects page of React portfolio](./images/screencap2.PNG)
+
+![Resume Page](./images/screencap3.PNG)
 
 ## Installation
+1. Clone the repo to your computer by clicking the green code button and copying the SSH version.
+
+2. Open Gitbash in your desired folder and type ```git clone ``` then right click to paste the string and hit enter. The repo will then be cloned to your computer.
+
+3. Navigate to the repo folder and type ```code .``` into gitbash to open the repo in VS Code.
+
+4. Open a new Terminal in VS Code and type ```npm install``` to install the repo dependencies.
+
+5. Finally, type ```npm run develop``` into the terminal to run the in development version and navigate to localhost:3008 in your web browser.
 
 ## Features
+Website has a contact form, a projects page with clickable links to deployed sites and GitHub repos. Looks really basic, but I'll learn more with React in time.
 
 ## Technology
 - React
+- CSS
+- JavaScript
 
 ## Contributors
 [Zachary Hobba](https://github.com/HobbaZ)
@@ -53,6 +70,8 @@ You can also contribute by opening a pull request or submitting an issue
 
 ## Acknowledgements
 [React docs](https://reactjs.org/docs/getting-started.html)
+
+[Use iframe for PDFs](https://stackoverflow.com/questions/53868082/how-to-render-pdf-in-react)
 
 [Deploying React to GitHub pages](https://github.com/gitname/react-gh-pages)
 
