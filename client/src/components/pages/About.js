@@ -9,13 +9,15 @@ export default function About() {
       </div>
 
       <div className='grid-item-2'>
-      <h1 className="aboutTitle">Hi, I'm Zac</h1>
-      <h3 className="aboutTitle"> CSS3 | HTML5 | JavaScript | MySQL | NoSQL | React | CSS style libraries | NPM modules | Node.js </h3>
+        <section>
+      <h1>Hi, I'm Zac</h1>
+      <h3> CSS3 | HTML5 | JavaScript | MySQL | NoSQL | React | CSS style libraries | NPM modules | Node.js </h3>
       <br></br>
       
-      <p>
+      <p className="aboutMeDesc">
         I'm a junior Web developer based in the Blue Mountains. Currently learning React. I'm Interested in procedural generation, dynamic created elements and learning AI/ML and AR/VR technology implementations.
       </p>
+      </section>
     </div>
     </div>
   );

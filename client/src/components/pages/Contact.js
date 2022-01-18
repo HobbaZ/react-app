@@ -3,6 +3,11 @@ import React, {useState} from 'react';
 // Here we import a helper function that will check if the email is valid
 //import { checkPassword, validateEmail } from '../../utils/helpers';
 
+function validateEmail(email) {
+  const checkEmail = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  return checkEmail.test(String(email).toLowerCase());
+}
+
 function Contact() {
   // We are also setting their initial values to an empty string
   const [email, setEmail] = useState('');
@@ -32,8 +37,10 @@ function Contact() {
     // Preventing the default behavior of the form submit (which is to refresh the page)
     e.preventDefault();
 
-    // First we check to see if the email is not valid or if the userName is empty. If so we set an error message to be displayed on the page.
-    
+    if (!validateEmail(email)) {
+      setErrorMessage('Email needs to be valid');
+      return;
+    }
     // If everything goes according to plan, we want to clear out the input after a successful registration.
     setUserName('');
     setMsg('');
@@ -42,46 +49,52 @@ function Contact() {
 
   return (
     <div>
+      <section>
       <h1>Contact Me</h1>
       <p>Drop me a line at <a href="mailto:zachobba@gmail.com">zachobba@gmail.com</a> or find me on <a href='https://www.linkedin.com/in/zachary-hobba-52aaa182/'>LinkedIn</a></p>
+      </section>
       <form className="form">
         
-        <label>Name:
-        <input
+        <label>Name:</label><br></br>
+        <input className='formField'
           value={userName}
-          
           name="userName"
           onChange={handleInputChange}
           type="text"
           placeholder="Name"
-        /></label>
+          required={true}
+        />
 
-        <label>Email:
-        <input
+        <label>Email:</label><br></br>
+        <input className='formField'
           value={email}
           name="email"
           onChange={handleInputChange}
           type="email"
           placeholder="Email"
-        /></label>
+          required={true}
+        />
 
-        <label>Subject:
-        <input
-          value={subject}
-          name="subject"
-          onChange={handleInputChange}
-          type="text"
-          placeholder="Subject"
-        /></label>
+        <label>Subject:</label><br></br>
+        <select className='formField'
+        value={subject}
+        required={true}
+        name="subject"
+        onChange={handleInputChange}
+        >
+        <option value="1">Make a General Enquiry</option>
+        <option value="2">Make a Complaint</option>
+        <option value="3">Talk About a Project or Idea</option>
+        </select>
 
-        <label>Message:
-        <input
+        <label>Message:</label><br></br>
+        <textarea className='formField textArea'
           value={msg}
           name="msg"
           onChange={handleInputChange}
-          type="textarea"
           placeholder="message"
-        /></label>
+          required={true}
+        />
 
         <button type="button" onClick={handleFormSubmit}>Submit</button>
       </form>

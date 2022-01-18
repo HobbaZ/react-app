@@ -8,7 +8,17 @@ function NavTabs({ currentPage, handlePageChange }) {
         <a
           href="#about"
           onClick={() => handlePageChange('About')}
-          className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
+          className={currentPage === 'About' ? 'noEffect' : 'noEffect'}
+        >
+          Zachary Hobba
+        </a>
+      </li>
+
+      <li className="navItem">
+        <a
+          href="#about"
+          onClick={() => handlePageChange('About')}
+          className={currentPage === 'About' ? 'navLink active' : 'navLink'}
         >
           About
         </a>
@@ -18,7 +28,7 @@ function NavTabs({ currentPage, handlePageChange }) {
         <a
           href="#projects"
           onClick={() => handlePageChange('Projects')}
-          className={currentPage === 'Projects' ? 'nav-link active' : 'nav-link'}
+          className={currentPage === 'Projects' ? 'navLink active' : 'navLink'}
         >
           Projects
         </a>
@@ -28,7 +38,7 @@ function NavTabs({ currentPage, handlePageChange }) {
         <a
           href="#contact"
           onClick={() => handlePageChange('Contact')}
-          className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
+          className={currentPage === 'Contact' ? 'navLink active' : 'navLink'}
         >
           Contact
         </a>
@@ -39,7 +49,7 @@ function NavTabs({ currentPage, handlePageChange }) {
         <a
           href="#resume"
           onClick={() => handlePageChange('Resume')}
-          //className={currentPage === 'Contact' ? 'nav-link active' : 'assets/files/Zac-Hobba-TECHNICAL-RESUME.pdf'}
+          //className={currentPage === 'Contact' ? 'navLink active' : 'assets/files/Zac-Hobba-TECHNICAL-RESUME.pdf'}
         >
           Resume
         </a>

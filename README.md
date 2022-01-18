@@ -54,6 +54,8 @@ You can also contribute by opening a pull request or submitting an issue
 ## Acknowledgements
 [https://create-react-app.dev/docs/adding-images-fonts-and-files/](https://create-react-app.dev/docs/adding-images-fonts-and-files/)
 
+[https://www.freecodecamp.org/news/build-portfolio-website-react/](https://www.freecodecamp.org/news/build-portfolio-website-react/)
+
 ## Testing
 No unit tests
 
