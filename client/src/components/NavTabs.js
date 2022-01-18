@@ -49,7 +49,7 @@ function NavTabs({ currentPage, handlePageChange }) {
         <a
           href="#resume"
           onClick={() => handlePageChange('Resume')}
-          //className={currentPage === 'Contact' ? 'navLink active' : 'assets/files/Zac-Hobba-TECHNICAL-RESUME.pdf'}
+          className={currentPage === 'Resume' ? 'navLink active' : 'navLink'}
         >
           Resume
         </a>

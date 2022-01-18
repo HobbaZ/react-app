@@ -6,10 +6,10 @@ import {projectInfo} from '../ProjectInfo';
     projectInfo.map((data)=> (
     <div className='projectBox'>
       <h2>{data.name}</h2>
-      <img src={data.image} width={300} height={300} alt= {data.altText}/>
+      <img className='projectImage' src={data.image} alt= {data.altText}/>
       <p>{data.description}</p>
-      <button type="button" onClick={data.githubLink}>GitHub</button><br></br>
-      <button type="button" onClick={data.deployedLink}>Website</button>
+      <button><a href={data.githubLink} target="_blank" rel='noreferrer'>GitHub</a></button><br></br>
+      <button><a href={data.deployedLink} target="_blank" rel='noreferrer'>Website</a></button>
       </div>
       ))
   
@@ -20,13 +20,8 @@ export default function Project() {
     <div>
     <section>
       <h1>Projects</h1>
-      <p>
-        Here are some of my projects
-      </p>
+      <p>Here are some of my projects</p>
     </section>
-
-    
-
       <div className='projectContainer'>
       <ProjectDisplay/>
     </div>
