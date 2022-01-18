@@ -53,7 +53,7 @@ Create your web developer portfolio using React
 
 4. Open a new Terminal in VS Code and type ```npm install``` to install the repo dependencies.
 
-5. Finally, type ```npm run develop``` into the terminal to run the in development version and navigate to localhost:3008 in your web browser.
+5. Finally, type ```npm run develop``` into the terminal to run the in development version and navigate to localhost:3006 in your web browser.
 
 ## Features
 Website has a contact form, a projects page with clickable links to deployed sites and GitHub repos. Looks really basic, but I'll learn more with React in time.
