@@ -18,7 +18,7 @@ Make web dev portfolio with React
 How to use React
 
 ## Deployment
-You can view the [website link](https://github.com/HobbaZ/react-portfolio) here. 
+You can view the [website link](https://hobbaz.github.io/react-portfolio/) here. 
 
 
 ## Table of Contents
@@ -52,6 +52,10 @@ You can view the [website link](https://github.com/HobbaZ/react-portfolio) here.
 You can also contribute by opening a pull request or submitting an issue
 
 ## Acknowledgements
+[React docs](https://reactjs.org/docs/getting-started.html)
+
+[Deploying React to GitHub pages](https://github.com/gitname/react-gh-pages)
+
 [https://create-react-app.dev/docs/adding-images-fonts-and-files/](https://create-react-app.dev/docs/adding-images-fonts-and-files/)
 
 [https://www.freecodecamp.org/news/build-portfolio-website-react/](https://www.freecodecamp.org/news/build-portfolio-website-react/)
