@@ -1,8 +1,5 @@
 import React, {useState} from 'react';
 
-// Here we import a helper function that will check if the email is valid
-//import { checkPassword, validateEmail } from '../../utils/helpers';
-
 function validateEmail(email) {
   const checkEmail = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   return checkEmail.test(String(email).toLowerCase());
@@ -22,7 +19,7 @@ function Contact() {
     const inputType = target.name;
     const inputValue = target.value;
 
-    // Based on the input type, we set the state of either email, username, and password
+    // Based on the input type, we set the state of either email, username
     if (inputType === 'email') {
       setEmail(inputValue);
     } else if (inputType === 'userName') {
